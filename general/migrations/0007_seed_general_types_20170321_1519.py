@@ -1001,6 +1001,7 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
+        migrations.RunPython(insertTypes),
         migrations.RunPython(insertSpace_Types),
         migrations.RunPython(insertAddress_Types),
         migrations.RunPython(insertRegion_Types),
@@ -1009,14 +1010,13 @@ class Migration(migrations.Migration):
         migrations.RunPython(insertCompany_Types),
         migrations.RunPython(insertNonmaterial_Types),
         migrations.RunPython(insertMaterial_Types),
+        migrations.RunPython(insertRecord_Types),
+        migrations.RunPython(insertArtwork_Types),
+        migrations.RunPython(insertUnit_Types),
         migrations.RunPython(insertJobs),
         migrations.RunPython(insertRecords),
         migrations.RunPython(insertRegions),
         migrations.RunPython(insertRelations),
         migrations.RunPython(insertUnitRatios),
-        migrations.RunPython(insertRecord_Types),
-        migrations.RunPython(insertTypes),
-        migrations.RunPython(insertArtwork_Types),
-        migrations.RunPython(insertUnit_Types),
         migrations.RunPython(insertUnits),
     ]
